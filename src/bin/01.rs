@@ -86,8 +86,8 @@ pub fn part_one(input: &str) -> Option<u64> {
                 value: m[1..].to_string(),
                 is_neg: m.starts_with("L"),
             };
-            let conv = turn.to_dialmove().ok();
-            conv
+            
+            turn.to_dialmove().ok()
         } else {
             None
         }
@@ -95,7 +95,7 @@ pub fn part_one(input: &str) -> Option<u64> {
     Some(count_zero_hits(moves, start_pos))
 }
 
-pub fn part_two(input: &str) -> Option<u64> {
+pub fn part_two(_input: &str) -> Option<u64> {
     None
 }
 
